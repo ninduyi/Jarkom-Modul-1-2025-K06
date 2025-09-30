@@ -167,6 +167,13 @@ rm -r 6 && rm -r traffic
 <img width="711" height="272" alt="image" src="https://github.com/user-attachments/assets/4dc78e9a-6c9f-4857-8c3e-d3603e9e2b89" />
 
 
+```
+chmod +x traffic.sh
+./traffic.sh
+```
+
+<img width="517" height="67" alt="image" src="https://github.com/user-attachments/assets/b4c05c54-cee1-470e-86c5-6e04f877fdaf" />
+
 
 
 
