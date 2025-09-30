@@ -155,17 +155,17 @@ Node lainnya
 
 - Manwe
   
-  ```
+```
 apt update 
 apt install unzip
 wget --no-check-certificate "https://docs.google.com/uc?export=download&id=1bE3kF1Nclw0VyKq4bL2VtOOt53IC7lG5" -O traffic.zip && 
 unzip traffic.zip -d traffic && 
 mv traffic/traffic.sh . && 
 rm -r 6 && rm -r traffic
-
-  ```
+```
 
 <img width="711" height="272" alt="image" src="https://github.com/user-attachments/assets/4dc78e9a-6c9f-4857-8c3e-d3603e9e2b89" />
+
 
 
 
