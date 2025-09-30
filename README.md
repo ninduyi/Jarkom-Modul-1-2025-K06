@@ -135,12 +135,15 @@ Node Varda
 
 Node Ulmo
 
-<img width="653" height="56" alt="image" src="https://github.com/user-attachments/assets/693e9f7f-3ca4-4df6-99fe-9cedeef8001a" />
+<img width="653" height="56" alt="image" src="https://github.com/user-attachments/assets/693e9f7f-3ca4-4df6-99fe-9cedeef8001a" />  
+
 Uji Coba ping google.com
+
 <img width="817" height="165" alt="image" src="https://github.com/user-attachments/assets/dab11896-435a-4ce9-966b-f18e99e368bd" />
 
 
 ## 5. 
+
 
 
 
