@@ -75,7 +75,23 @@ iface eth0 inet static
 	address 192.214.2.3
 	netmask 255.255.255.0
 	gateway 192.214.2.1
+```  
+
+4. Setelah berhasil terhubung, sekarang Eru ingin agar setiap Ainur (Client) dapat mandiri. Oleh karena itu pastikan agar setiap Client dapat tersambung ke internet.  
+Router Eru
+Ketikkan iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s [Prefix IP].0.0/16  
+<img width="810" height="249" alt="image" src="https://github.com/user-attachments/assets/cbd6790b-e927-4c51-9820-990945c40e44" />
+Ketikkan command cat /etc/resolv.conf di Eru  
+<img width="438" height="43" alt="image" src="https://github.com/user-attachments/assets/6965a20f-4619-4dd8-9321-e6336ed217a8" />
+Lalu ketikkan command
 ```
+echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+pada node yang lainnya 
+
+
+
+
 
 
 
