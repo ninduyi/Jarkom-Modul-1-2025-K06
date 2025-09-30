@@ -24,7 +24,7 @@ Sebelum menambahkan NAT :
 <img width="711" height="48" alt="image" src="https://github.com/user-attachments/assets/027e3c63-c9a2-42de-8b1c-60e17293b446" />  
 Sesudah ditambahkan:  
 <img width="628" height="458" alt="image" src="https://github.com/user-attachments/assets/f5683653-35cc-4bb8-b398-62c3f9b16a4d" />  
-<img width="802" height="161" alt="image" src="https://github.com/user-attachments/assets/931c63d5-64ec-4fcb-8869-104eec214794" />
+<img width="802" height="161" alt="image" src="https://github.com/user-attachments/assets/931c63d5-64ec-4fcb-8869-104eec214794" />  
 3. Sekarang pastikan agar setiap Ainur (Client) dapat terhubung satu sama lain.  
 <img width="505" height="475" alt="image" src="https://github.com/user-attachments/assets/fef55ca9-6366-4417-b2fc-21631003f9f6" />
 
@@ -76,6 +76,7 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.214.2.1
 ```
+
 
 
 
