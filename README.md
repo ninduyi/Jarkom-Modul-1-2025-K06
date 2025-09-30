@@ -101,18 +101,19 @@ iface eth0 inet static
 
 ## 4. Client Tersambung ke Internet
 
-Agar setiap client dapat mengakses internet, lakukan konfigurasi berikut di Router Eru:
+Agar setiap client dapat mengakses internet, lakukan konfigurasi berikut di Router Eru:  
 ```
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s [Prefix IP].0.0/16
 ```
-Screenshot:
-<img width="810" height="249" alt="image" src="https://github.com/user-attachments/assets/cbd6790b-e927-4c51-9820-990945c40e44" />
-Cek DNS di Eru:
+Screenshot:  
+<img width="810" height="249" alt="image" src="https://github.com/user-attachments/assets/cbd6790b-e927-4c51-9820-990945c40e44" />  
+Cek DNS di Eru:  
 ```
 cat /etc/resolv.conf
 ```
-<img width="438" height="43" alt="image" src="https://github.com/user-attachments/assets/6965a20f-4619-4dd8-9321-e6336ed217a8" />
-Kemudian pada setiap node client jalankan:
+<img width="438" height="43" alt="image" src="https://github.com/user-attachments/assets/6965a20f-4619-4dd8-9321-e6336ed217a8" />  
+Kemudian pada setiap node client jalankan:  
 ```
 echo nameserver 192.168.122.1 > /etc/resolv.conf
 ```
+
