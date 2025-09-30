@@ -1,4 +1,4 @@
-<img width="755" height="474" alt="image" src="https://github.com/user-attachments/assets/27ac29f1-bfb9-47e9-a9d7-e6ff02a609a6" /># Jarkom Modul 1 - 2025 K06
+# Jarkom Modul 1 - 2025 K06
 
 ## 1. Topologi Dasar
 Untuk mempersiapkan pembuatan entitas selain mereka, **Eru** yang berperan sebagai Router membuat dua **Switch/Gateway**:
@@ -181,6 +181,7 @@ chmod +x traffic.sh
 - **ip.addr == [ip manwe] || ip.addr == 192.214.1.3**
 
 <img width="755" height="474" alt="image" src="https://github.com/user-attachments/assets/3c0d3e62-dddd-4b14-baa7-f7eb84daf190" />
+
 
 
 
