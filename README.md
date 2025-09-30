@@ -142,7 +142,18 @@ Uji Coba ping google.com
 <img width="817" height="165" alt="image" src="https://github.com/user-attachments/assets/dab11896-435a-4ce9-966b-f18e99e368bd" />
 
 
-## 5. 
+## 5. Ainur terkuat Melkor tetap berusaha untuk menanamkan kejahatan ke dalam Arda (Bumi). Sebelum terjadi kerusakan, Eru dan para Ainur lainnya meminta agar semua konfigurasi tidak hilang saat semua node di restart.
+Eru  
+
+<img width="654" height="507" alt="image" src="https://github.com/user-attachments/assets/1e56eb6e-ced3-4d56-a9ad-377ce994a68f" />
+
+Node lainnya
+
+<img width="650" height="469" alt="image" src="https://github.com/user-attachments/assets/d9c42532-347a-4a78-9e72-3e6442477283" />
+
+
+
+
 
 
 
