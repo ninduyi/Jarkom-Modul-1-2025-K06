@@ -6,10 +6,12 @@ Router (Eru) bikin 2 Switch
 Switch 1 => Melkor & Manwe (as Client)
 Switch 2 => Varda & Ulmo (as Client)
 
-
 	SCREENSHOT : 
 
 <img width="749" height="501" alt="image" src="https://github.com/user-attachments/assets/962767f2-dd7e-4d71-a08f-8bac84ffff9f" />
+
+
+
 
 
 
