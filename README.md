@@ -25,6 +25,60 @@ Sebelum menambahkan NAT :
 Sesudah ditambahkan:  
 <img width="628" height="458" alt="image" src="https://github.com/user-attachments/assets/f5683653-35cc-4bb8-b398-62c3f9b16a4d" />  
 <img width="802" height="161" alt="image" src="https://github.com/user-attachments/assets/931c63d5-64ec-4fcb-8869-104eec214794" />
+3. Sekarang pastikan agar setiap Ainur (Client) dapat terhubung satu sama lain.  
+<img width="505" height="475" alt="image" src="https://github.com/user-attachments/assets/fef55ca9-6366-4417-b2fc-21631003f9f6" />
+
+Config Eru
+```
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+	address 192.214.1.1
+	netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+	address 192.214.2.1
+	netmask 255.255.255.0
+```
+
+Config Melkor
+```
+auto eth0
+iface eth0 inet static
+	address 192.214.1.2
+	netmask 255.255.255.0
+	gateway 192.214.1.1
+```
+Config Manwe
+```
+auto eth0
+iface eth0 inet static
+	address 192.214.1.3
+	netmask 255.255.255.0
+	gateway 192.214.1.1
+```
+Config Varda
+```
+auto eth0
+iface eth0 inet static
+	address 192.214.2.2
+	netmask 255.255.255.0
+	gateway 192.214.2.1
+```
+Config Ulmo
+```
+auto eth0
+iface eth0 inet static
+	address 192.214.2.3
+	netmask 255.255.255.0
+	gateway 192.214.2.1
+```
+
+
+
 
 
 
