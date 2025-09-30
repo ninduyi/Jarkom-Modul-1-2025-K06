@@ -112,10 +112,12 @@ Cek DNS di Eru:
 cat /etc/resolv.conf
 ```
 <img width="438" height="43" alt="image" src="https://github.com/user-attachments/assets/6965a20f-4619-4dd8-9321-e6336ed217a8" />  
+
 Kemudian pada setiap node client jalankan:  
 
 ```
 echo nameserver 192.168.122.1 > /etc/resolv.conf
 ```
+
 
 
