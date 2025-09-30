@@ -119,24 +119,29 @@ Kemudian pada setiap node client jalankan:
 ```
 echo nameserver 192.168.122.1 > /etc/resolv.conf
 ```
-- Node Melkor
-  
-<img width="656" height="54" alt="image" src="https://github.com/user-attachments/assets/ef8b93e8-0e1d-4fb6-a581-f8b7768adce4" />    
-- Node Manwe
-     
-<img width="653" height="57" alt="image" src="https://github.com/user-attachments/assets/acd46a0d-a16f-4b33-be85-b1e984997961" />  
-- Node Varda
-  
-<img width="655" height="57" alt="image" src="https://github.com/user-attachments/assets/2a5be5da-5f41-41dd-9efc-ccb46da50c21" />  
-- Node Ulmo
-  
-<img width="653" height="56" alt="image" src="https://github.com/user-attachments/assets/693e9f7f-3ca4-4df6-99fe-9cedeef8001a" />  
+Setelah konfigurasi, setiap node client dapat terkoneksi ke internet.
 
-Coba ping google.com   
-<img width="817" height="165" alt="image" src="https://github.com/user-attachments/assets/dab11896-435a-4ce9-966b-f18e99e368bd" />  
+Node Melkor
+
+<img width="656" height="54" alt="image" src="https://github.com/user-attachments/assets/ef8b93e8-0e1d-4fb6-a581-f8b7768adce4" />
+
+Node Manwe
+
+<img width="653" height="57" alt="image" src="https://github.com/user-attachments/assets/acd46a0d-a16f-4b33-be85-b1e984997961" />
+
+Node Varda
+
+<img width="655" height="57" alt="image" src="https://github.com/user-attachments/assets/2a5be5da-5f41-41dd-9efc-ccb46da50c21" />
+
+Node Ulmo
+
+<img width="653" height="56" alt="image" src="https://github.com/user-attachments/assets/693e9f7f-3ca4-4df6-99fe-9cedeef8001a" />
+Uji Coba ping google.com
+<img width="817" height="165" alt="image" src="https://github.com/user-attachments/assets/dab11896-435a-4ce9-966b-f18e99e368bd" />
 
 
 ## 5. 
+
 
 
 
