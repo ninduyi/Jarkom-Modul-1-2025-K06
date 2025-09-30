@@ -22,9 +22,10 @@ Node NAT digunakan sebagai penghubung antara jaringan virtual GNS3 dan jaringan 
 	SCREENSHOT : 
 Sebelum menambahkan NAT : 
 <img width="711" height="48" alt="image" src="https://github.com/user-attachments/assets/027e3c63-c9a2-42de-8b1c-60e17293b446" />  
-Sesudah ditambahkan:
+Sesudah ditambahkan:  
 <img width="628" height="458" alt="image" src="https://github.com/user-attachments/assets/f5683653-35cc-4bb8-b398-62c3f9b16a4d" />  
 <img width="802" height="161" alt="image" src="https://github.com/user-attachments/assets/931c63d5-64ec-4fcb-8869-104eec214794" />
+
 
 
 
