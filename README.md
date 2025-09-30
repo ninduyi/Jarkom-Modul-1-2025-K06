@@ -151,6 +151,24 @@ Node lainnya
 
 <img width="650" height="469" alt="image" src="https://github.com/user-attachments/assets/d9c42532-347a-4a78-9e72-3e6442477283" />
 
+## 6. Setelah semua Ainur terhubung ke internet, Melkor mencoba menyusup ke dalam komunikasi antara Manwe dan Eru. Jalankan file berikut (link file) lalu lakukan packet sniffing menggunakan Wireshark pada koneksi antara Manwe dan Eru, lalu terapkan display filter untuk menampilkan semua paket yang berasal dari atau menuju ke IP Address Manwe. Simpan hasil capture tersebut sebagai bukti.
+
+- Manwe
+  
+  ```
+apt update 
+apt install unzip
+wget --no-check-certificate "https://docs.google.com/uc?export=download&id=1bE3kF1Nclw0VyKq4bL2VtOOt53IC7lG5" -O traffic.zip && 
+unzip traffic.zip -d traffic && 
+mv traffic/traffic.sh . && 
+rm -r 6 && rm -r traffic
+
+  ```
+
+<img width="711" height="272" alt="image" src="https://github.com/user-attachments/assets/4dc78e9a-6c9f-4857-8c3e-d3603e9e2b89" />
+
+
+
 
 
 
