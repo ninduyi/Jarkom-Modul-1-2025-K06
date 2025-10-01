@@ -1,24 +1,27 @@
-<img width="699" height="264" alt="image" src="https://github.com/user-attachments/assets/c42950bd-c255-4729-8425-da663c99dd46" /># Jarkom Modul 1 - 2025 K06
+# Praktikum Komunikasi Data dan Jaringan Komputer Modul 1 - K06
 
-## 1. Topologi Dasar
+## Anggota Kelompok
+
+| NRP        | Nama                            |
+|:----------:|:-------------------------------:|
+| 5027241006 | Nabilah Anindya Paramesti       |
+| 5027241041 | Raya Ahmad Syarif               |
+
+# Soal 1 Topologi Dasar #
+
 Untuk mempersiapkan pembuatan entitas selain mereka, **Eru** yang berperan sebagai Router membuat dua **Switch/Gateway**:
-
-- **Switch 1** → menuju ke dua Ainur yaitu **Melkor** dan **Manwe**.  
-- **Switch 2** → menuju ke dua Ainur lainnya yaitu **Varda** dan **Ulmo**.  
 
 Keempat Ainur tersebut diberi perintah oleh Eru untuk menjadi **Client**.  
 
-**Intinya:**  
+**Jawaban :**  
 Router (**Eru**) → 2 Switch  
 - Switch 1 → Melkor & Manwe (Client)  
 - Switch 2 → Varda & Ulmo (Client)  
 
-**Screenshot:**  
-<img width="749" height="501" alt="image" src="https://github.com/user-attachments/assets/962767f2-dd7e-4d71-a08f-8bac84ffff9f" />
-
+![](/images/image35.png)
 ---
 
-## 2. Koneksi Router ke Internet
+# Soal 2 Koneksi Router ke Internet #
 Karena Arda (Bumi) masih terisolasi, Eru harus dapat tersambung ke internet.  
 
 **Langkah:**
@@ -28,14 +31,13 @@ Karena Arda (Bumi) masih terisolasi, Eru harus dapat tersambung ke internet.
 Node **NAT** digunakan sebagai penghubung antara jaringan virtual GNS3 dan jaringan Internet.  
 Tanpa NAT, router Eru hanya menghubungkan client dalam jaringan lokal, tetapi tidak bisa meneruskan paket keluar.
 
-**Screenshot:**  
-Sebelum menambahkan NAT:  
-<img width="711" height="48" alt="image" src="https://github.com/user-attachments/assets/027e3c63-c9a2-42de-8b1c-60e17293b446" />  
+**Sebelum ditambahkan NAT :**
 
-Sesudah ditambahkan:  
-<img width="628" height="458" alt="image" src="https://github.com/user-attachments/assets/f5683653-35cc-4bb8-b398-62c3f9b16a4d" />  
-<img width="802" height="161" alt="image" src="https://github.com/user-attachments/assets/931c63d5-64ec-4fcb-8869-104eec214794" />  
+![](/images/image55.png)
 
+**Sesudah ditambahkan :**
+
+![](/images/image8.png)
 ---
 
 ## 3. Koneksi Antar Client
