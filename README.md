@@ -1,4 +1,4 @@
-# Jarkom Modul 1 - 2025 K06
+<img width="699" height="264" alt="image" src="https://github.com/user-attachments/assets/c42950bd-c255-4729-8425-da663c99dd46" /># Jarkom Modul 1 - 2025 K06
 
 ## 1. Topologi Dasar
 Untuk mempersiapkan pembuatan entitas selain mereka, **Eru** yang berperan sebagai Router membuat dua **Switch/Gateway**:
@@ -373,6 +373,74 @@ Input dari hasil Export Objects > HTTP
 Cara:
 Save file ke linux lalu gunakan command sha256sum knr.exe maka Anda akan mendapatkan sha256sum dari knr.exe seperti ini: 
 749e161661290e8a2d190b1a66469744127bc25bf46e5d0c6f2e835f4b92db18
+
+## 18. Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
+(link file) nc 10.15.43.32 3405
+
+<img width="904" height="279" alt="image" src="https://github.com/user-attachments/assets/b9dd429b-9d82-489c-86d4-09cd3dfece4e" />
+
+Cara:
+1. File > Export Object > SMB
+
+<img width="896" height="336" alt="image" src="https://github.com/user-attachments/assets/eb9c9030-409a-486f-85bb-ea165db2518d" />
+
+Bisa terlihat bahwa terdapat dua file exe dan ada nama dari file tersebut.
+
+2. Hash dari nama kedua file exe
+   
+<img width="825" height="148" alt="image" src="https://github.com/user-attachments/assets/6c32e484-8c0a-4f78-b9c1-d5b3767f24ed" />
+
+Kedua file disave di linux dan gunakan command sha256sum <namafile> lalu akan muncul hasilnya.
+
+## 19. Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
+	(link file) nc 10.15.43.32 3406
+1. Cara:
+Terapkan display filter: smtp lalu cari konten yang berisi ancaman pada kolom info seperti di bawah ini:
+
+<img width="897" height="14" alt="image" src="https://github.com/user-attachments/assets/c4d9ce4a-8a1e-4552-8317-770352f1bc68" />
+
+Dapat dilihat nama pengirimnya Your Life dan dia mengirim pesan ancaman
+
+<img width="907" height="256" alt="image" src="https://github.com/user-attachments/assets/54fefacb-8d83-4fd4-bf18-2c14a7bf824a" />
+
+Buka paket dan lihat line based text data, di situ terdapat data-data yang kita butuhkan untuk menjawab pertanyaan seperti jumlah ransom yang diminta, bitcoin walletnya
+
+<img width="572" height="172" alt="image" src="https://github.com/user-attachments/assets/cd69a3a2-7194-4900-b643-76930f508318" />
+
+<img width="890" height="87" alt="image" src="https://github.com/user-attachments/assets/74bb341c-3a20-4724-95e1-66a567b783c3" />
+
+## 20. Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
+(link file) nc 10.15.43.32 3407
+
+<img width="899" height="322" alt="image" src="https://github.com/user-attachments/assets/13c5b86c-a799-4c03-97ff-bc51a6d9740c" />
+
+Cara:
+1. Gunakan filter tls && tls.handshake.type == 2 untuk melihat paket TLS handshake bertipe “Server Hello”.
+
+<img width="699" height="264" alt="image" src="https://github.com/user-attachments/assets/ae39bec2-95d1-4292-9082-f9c4e81d118a" />
+
+Bisa dilihat bahwa encryption method yang digunakan adalah TLS.
+2. Pada bagian ini kita menggunakan log file yang sudah disediakan. Pertama, klik edit lalu preferences, pada bagian protocol drop down ke bagian TLS lalu (Pre)-master-log-filename kita isi dengan log file yang sudah disediakan pada link.
+
+<img width="746" height="551" alt="image" src="https://github.com/user-attachments/assets/cb18a707-8a7e-4bef-b990-72f4eb5447e9" />
+
+Klik ok dan bisa dilihat bahwa ada perubahan dalam list packets.
+Setelah itu, buka file lalu klik Export Object > HTTP..
+
+<img width="807" height="587" alt="image" src="https://github.com/user-attachments/assets/d5fc9606-2e5a-4750-94b2-f7d9dcb7b5ed" />
+
+Bisa dilihat terdapat file yang paling besar sizenya yaitu invest_20.dll
+3. Save invest_20.dll ke linux lalu gunakan command sha256sum invest_20.dll
+
+<img width="892" height="73" alt="image" src="https://github.com/user-attachments/assets/a59227c2-209e-4089-852b-867a735bfe6b" />
+
+
+
+
+
+
+
+
 
 
 
