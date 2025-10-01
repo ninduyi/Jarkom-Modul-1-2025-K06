@@ -182,7 +182,34 @@ chmod +x traffic.sh
 
 <img width="755" height="474" alt="image" src="https://github.com/user-attachments/assets/3c0d3e62-dddd-4b14-baa7-f7eb84daf190" />
 
+## 7. Untuk meningkatkan keamanan, Eru memutuskan untuk membuat sebuah FTP Server di node miliknya. Lakukan konfigurasi FTP Server pada node Eru. Buat dua user baru: ainur dengan hak akses write&read dan melkor tanpa hak akses sama sekali ke direktori shared. Buktikan hasil tersebut dengan membuat file teks sederhana kemudian akses file tersebut menggunakan kedua user.
 
+**ERU**
+
+```
+adduser ainur
+adduser melkor
+mkdir -p /srv/ftp/shared
+chown -R ainur:ainur /srv/ftp/shared
+chmod 700 /srv/ftp/shared
+nano /etc/vsftpd.conf
+local_enable=YES
+write_enable=YES
+chroot_local_user=YES
+allow_writeable_chroot=YES
+service vsftpd restart
+Atur home directory khusus user ainur:
+usermod -d /srv/ftp/shared ainur
+```
+**Pengujian di Node Manwe (client FTP)**
+
+<img width="692" height="56" alt="image" src="https://github.com/user-attachments/assets/14265408-5c14-4e50-bb2a-041978bae064" />
+
+<img width="760" height="270" alt="image" src="https://github.com/user-attachments/assets/70c32847-1cda-423a-b5e2-a013ee55e4a1" />
+
+<img width="718" height="153" alt="image" src="https://github.com/user-attachments/assets/f01cb909-e271-40a5-aa85-453633168860" />
+
+<img width="596" height="346" alt="image" src="https://github.com/user-attachments/assets/08c99d09-6e02-44c7-bcf9-432347ae40d6" />
 
 
 
