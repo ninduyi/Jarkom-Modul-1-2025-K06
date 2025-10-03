@@ -8,11 +8,6 @@
 
 ---
 
-## Ekspor ke Spreadsheet
-*(opsional, isi sesuai kebutuhan repositori)*
-
----
-
 ## Daftar Isi
 - [Soal 1](#soal-1)
 - [Soal 2](#soal-2)
