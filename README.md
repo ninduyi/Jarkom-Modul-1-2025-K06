@@ -218,13 +218,15 @@ Mendownload file traffic terlebih dahulu
 wget --no-check-certificate "https://docs.google.com/uc?export=download&id=1bE3kF1Nclw0VyKq4bL2VtOOt53IC7lG5" -O traffic.zip && 
 unzip traffic.zip -d traffic && 
 mv traffic/traffic.sh . && 
-rm -r 6 && rm -r traffic
+rm traffic.zip && rm -r traffic
 ```
 ![](/images/6.1.png)
 
 Lalu memberikan izin eksekusi dan menjalankan file tersebut
 ```bash
 chmod +x traffic.sh
+
+# Sebelum menjalankan jangan lupa capture
 ./traffic.sh
 ```
 ![](/images/6.2-buat-traffic.png)
@@ -264,6 +266,14 @@ adduser melkor
 mkdir -p /srv/ftp/shared
 chown -R ainur:ainur /srv/ftp/shared
 chmod 700 /srv/ftp/shared
+
+# ubah konfigurasi
+nano /etc/vsftpd.conf
+    local_enable=YES
+    write_enable=YES
+    chroot_local_user=YES
+    allow_writeable_chroot=YES
+
 # Pastikan konfigurasi di /etc/vsftpd.conf sudah sesuai 
 usermod -d /srv/ftp/shared ainur
 service vsftpd restart
@@ -319,6 +329,7 @@ Perintah tersebut untuk mendownload file, lalu dilanjut masuk ke FTP server Eru
 ```bash
 ftp 192.214.2.1
 # (Login sebagai user ainur)
+# jangan lupa capture untuk menganalisis
 put cuaca.txt 
 put mendung.jpg 
 ```
@@ -349,7 +360,7 @@ Eru membagikan "Kitab Penciptaan" kepada Manwe dan mengubah akses user **ainur**
 ### Pengujian dari Eru
 Mendownload file
 ```bash
-wget --no-check-certificate "https://docs.google.com/uc?export=download&id=11ua2KgBu3MnHEIjhBnzqqv2RMEiJsILY" -O kitab_ciptaan.zip
+wget --no-check-certificate "https://docs.google.com/uc?export=download&id=11ua2KgBu3MnHEIjhBnzqqv2RMEiJsILY" -O kitab_penciptaan.zip
 unzip kitab_penciptaan.zip -d /srv/ftp/shared
 ```
 ![](/images/9.1-download.png)
@@ -371,6 +382,7 @@ chown root:root /srv/ftp/shared
 ```bash
 ftp 192.214.1.1
 # login sebagai ainur
+# jangan lupa capture manwe
 get kitab_penciptaan.txt   # berhasil karena ainur masih memiliki hak baca
 put coba.txt               # gagal: 553 Could not create file (hak tulis dicabut)
 ```
@@ -441,6 +453,7 @@ ss -tulpn | grep :23
 
 ### Koneksi dari Eru (Client)
 ```bash
+# jangan lupa capture melkor
 telnet 192.214.1.2 
 ```
 ![](/images/11.2-telnet.png)
@@ -528,6 +541,7 @@ ss -tlnp | grep ':22'
 
 ### Koneksi dari Varda
 ```bash
+# jangan lupa capture varda
 ssh ainur@192.214.1.1 
 ```
 ![](/images/13.2-ssh.png)
